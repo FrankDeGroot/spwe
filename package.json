@@ -1,0 +1,27 @@
+{
+  "name": "spwe",
+  "version": "0.0.1",
+  "description": "Single Page Website Editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankDeGroot/spwe.git"
+  },
+  "keywords": [
+    "website",
+    "editor"
+  ],
+  "author": "Frank de Groot - Schouten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrankDeGroot/spwe/issues"
+  },
+  "homepage": "https://github.com/FrankDeGroot/spwe#readme",
+  "dependencies": {
+    "electron": "^2.0.6",
+    "http-server": "^0.11.1"
+  }
+}
