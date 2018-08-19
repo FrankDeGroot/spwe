@@ -4,6 +4,8 @@
   "description": "Single Page Website Editor",
   "main": "index.js",
   "scripts": {
+    "eslint": "eslint --fix lib editor",
+    "start": "electron .",
     "test": "npm run test"
   },
   "repository": {
@@ -20,8 +22,20 @@
     "url": "https://github.com/FrankDeGroot/spwe/issues"
   },
   "homepage": "https://github.com/FrankDeGroot/spwe#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "preact-material-components": "^1.5.0",
+    "prettier": "^1.14.2"
+  },
   "dependencies": {
-    "electron": "^2.0.6",
-    "http-server": "^0.11.1"
+    "electron": "^2.0.7",
+    "fs-extra": "^7.0.0",
+    "globby": "^8.0.1",
+    "http-server": "^0.11.1",
+    "preact": "^8.2.9",
+    "simplemde": "^1.11.2",
+    "spwb": "^0.1.0"
   }
 }

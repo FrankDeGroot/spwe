@@ -1,3 +1,5 @@
 .*
+!.editorconfig
+!.eslintrc.js
 !.gitignore
 node_modules
