@@ -1,6 +1,5 @@
 'use strict';
 
-const { open } = require('./mde');
 const { basename } = require('path');
 const { Component, h } = require('preact');
 
@@ -10,7 +9,7 @@ class Files extends Component {
       h(
         'li',
         { id: item },
-        h('a', { href: '#', onClick: () => open(item) }, basename(item))
+        h('a', { href: '#', onClick: () => props.open(item) }, basename(item))
       )
     );
     return h('main', null, h('ul', {}, items));
