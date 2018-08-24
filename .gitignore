@@ -1,5 +1,6 @@
 .*
 !.editorconfig
-!.eslintrc.js
 !.gitignore
 node_modules
+*.js
+*.js.map
