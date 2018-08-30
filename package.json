@@ -4,7 +4,7 @@
   "description": "Single Page Website Editor",
   "main": "index.js",
   "scripts": {
-    "clean": "npx rimraf *.js *.js.map lib/*.js lib/*.js.map editor/*.js editor/*.js.map",
+    "clean": "rimraf *.js *.js.map lib/*.js lib/*.js.map editor/*.js editor/*.js.map",
     "start": "electron .",
     "tsc": "tsc --project .",
     "tslint": "tslint --fix --project ."
@@ -34,7 +34,7 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "electron": "^2.0.7",
+    "electron": "^2.0.8",
     "fs-extra": "^7.0.0",
     "globby": "^8.0.1",
     "http-server": "^0.11.1",
