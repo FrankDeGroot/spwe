@@ -4,7 +4,7 @@
   "description": "Single Page Website Editor",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf *.js *.js.map lib/*.js lib/*.js.map editor/*.js editor/*.js.map",
+    "clean": "del !node_modules/* *.js *.js.map **/{*.js,*.js.map}",
     "start": "electron .",
     "tsc": "tsc --project .",
     "tslint": "tslint --fix --project ."
@@ -28,8 +28,8 @@
     "@types/globby": "^8.0.0",
     "@types/http-server": "^0.10.0",
     "@types/simplemde": "^1.11.7",
+    "del-cli": "^1.1.0",
     "preact-material-components": "^1.5.0",
-    "rimraf": "^2.6.2",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
   },
@@ -39,7 +39,6 @@
     "globby": "^8.0.1",
     "http-server": "^0.11.1",
     "preact": "^8.2.9",
-    "simplemde": "^1.11.2",
-    "spwb": "^0.1.0"
+    "simplemde": "^1.11.2"
   }
 }

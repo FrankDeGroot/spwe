@@ -6,5 +6,7 @@ export async function serve(config: IConfig) {
     root: config.siteDir,
   };
   const server = createServer(options);
-  return await server.listen(8080, "127.0.0.1");
+  return new Promise((resolve) => {
+    server.listen(8080, "0.0.0.0", resolve);
+  });
 }
