@@ -4,7 +4,7 @@
   "description": "Single Page Website Editor",
   "main": "index.js",
   "scripts": {
-    "clean": "del !node_modules/* *.js *.js.map **/{*.js,*.js.map}",
+    "clean": "del-cli !node_modules/* *.js *.js.map **/{*.js,*.js.map}",
     "start": "electron .",
     "tsc": "tsc --project .",
     "tslint": "tslint --fix --project ."
@@ -29,6 +29,7 @@
     "@types/http-server": "^0.10.0",
     "@types/simplemde": "^1.11.7",
     "del-cli": "^1.1.0",
+    "electron-rebuild": "^1.8.2",
     "preact-material-components": "^1.5.0",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
